@@ -6,10 +6,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
-      <Head>
-        <title>José Guilherme - Desenvolvedor Front End</title>
-        <Component {...pageProps} />
-      </Head>
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
